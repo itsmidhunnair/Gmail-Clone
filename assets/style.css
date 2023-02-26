@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #f6f8fc;
+}
+
+.mainDiv{
+    display: flex;
+}
+
+.sideNav{
+    position:fixed;
+    width: 50px;
+    /* background-color: #375885; */
+    background-color: #eaf1fb;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.topNav{
+    position:fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 50px;
+    top: 0;
+    left: 50px;
+    background-color: #f6f8fc;
+    z-index: 1;
+}
+
+.topNav .logo{
+    padding-left: 22px;
+    /* height: 100px; */
+}
+
+.searchBox span{
+    padding-left: 10px;
+    border-radius: 8px 0 0 8px;
+    background-color: #eaf1fb;
+    width: auto;
+    margin: auto;
+    height: 52px;
+}
+
+.searchBox svg{
+    width: auto;
+    padding-top: 11px;
+}
+
+.searchBox{
+    min-width: 40%;
+    width: 450px;
+    display: flex;
+    margin-left: 145px;
+}
+
+.searchBox #searchBox{
+    width: 100%;
+    padding: 11px;
+    border: none;
+    height: 30px;
+    background-color: #eaf1fb;
+    outline: none;
+}
+
+.settingAndAll{
+    position: absolute;
+    /* border: 1px solid #c00c00; */
+    right: 100px;
+    display: flex;
+}
+
+.settingAndAll .status{
+    border: 1px solid #dadce0;
+    border-radius: 100px;
+    width: 110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.settingAndAll .status:hover{
+    background-color: #dadce0;
+}
+
+.status .status-icon{
+    color:green;
+    font-weight: bolder;
+    font-size: 27px;
+    margin-left: 10px;
+}
+
+.status .status-Desc{
+    margin: auto;
+    text-align: right;
+    color: #3c4043;
+}
+
+.status .arrow{
+    margin: auto;
+    padding: 5px;
+    transform: rotate(90deg);
+    color: #5f6368;
+}
+
+.statusDropDown{
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    height: 155px;
+    width: 192px;
+    top: 54px;
+    left: 1052px;
+    -webkit-box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.42);
+    -moz-box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.42);
+    box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.42);
+}
+
+.statusDropDown a{
+    display: block;
+    text-decoration: none;color: #3c4043;
+    margin-top: 20px;
+    padding-left: 21px;
+}
+
+.rghtSupIcons{
+    margin: auto;
+}
+
+.rghtSupIcons{
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.support{
+    background-color: transparent;
+    border: none;
+}
+
+svg{
+    fill: #5f6368;
+    opacity: 1;
+    width: 40px;
+}
+
+.dots-svg svg{
+    width: 26px;
+    
+}
+
+.search-icon{
+    background-color: green;
+    width: 10px;
+}
+
+.profile{
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    width: 148px;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    top: 7px;
+}
+
+.orgLogo img{
+    width: 100px;
+    padding-top: 6px;
+}
+
+.gb_h {
+    -webkit-background-size: 32px 32px;
+    background-size: 32px 32px;
+    border: 0;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.icons svg{
+    fill: #5f6368;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.contentDiv{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    margin-left: 75px;
+    /* margin-left: 336px; */
+    margin-right: 34px;
+    right: 0;
+    transition: 0.5s;
+}
+
+.contentDiv .topWhite{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 50px;
+    border-radius: 20px 20px 0 0;
+    padding: 10px 30px 20px 30px;
+}
+
+.icon-collection{
+    display: flex;
+    overflow: hidden;
+    width: 30px;
+    transition: 1s;
+}
+
+.icon-collection > div{
+    margin-left: 25px;
+}
+
+
+.vertical-line{
+    border-left: 1px solid rgb(187, 184, 184);
+    height: 22px;
+}
+
+.get_start{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.get_start_grp{
+    border: 1px solid #dadce0;
+    margin-top: 33px;
+    border-radius: 15px;
+    height: 108px;
+    overflow-y: hidden;
+    padding: 10px 20px;
+    width: 97%;
+    transition: 1s;
+}
+
+.get_start_icons{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+}
+
+.get_start_icons > div{
+    display: flex;
+    align-items: center;
+}
+
+.mails{
+    position: absolute;
+    background-color: #eaf1fb;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 0 0 15px 15px ;
+}
+
+.mail{
+    padding: 8px;
+    border-bottom: 1px dashed rgb(187, 184, 184);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub{
+    display:flex;
+    width:70%;
+}
+
+.sender{
+    width: 160px;
+}
+
+.mailDesc{
+    color: #5f6368;
+    text-overflow: ellipsis;
+    font-size: 0.875rem;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 74%;
+}
+
+.inMailIcons{
+    width: 140px;
+}
+
+.inMailIcons > img{
+    margin-left:10px;
+}
+
+.mail-right-icons > div {
+    margin-right: 10px;
+  }
+
+  .collap-menu{
+    position: fixed;
+    /* width: 256px; */
+    width: 0;
+    height: 100vh;
+    left: 50px;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sideNav-icons{
+    display: block;
+    margin-top: 26px;
+}
+
+.hamburger{
+    background-color: transparent;
+    border: none;
+    height: 25px;
+}
+
+.sideNav-icons > div{
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+  .compose-btn{
+    background-color: #c2e7ff;
+    color: #001d35;
+    width: 133px;
+    height:47px;
+    border-radius: 16px;
+    border: none;
+    font-size: .875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+.menu-items{
+    margin-top: 90px;
+    margin-left: 21px;
+}
+
+.menuTexts{
+    width: 77%;
+    border-radius: 100px;
+    margin-top: 15px;
+    padding: 0 16px 0 12px;
+}
+
+.menuTexts > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .875rem;
+    height:27px;
+}

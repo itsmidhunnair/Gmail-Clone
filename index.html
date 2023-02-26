@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gmail Screen</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="mainDiv">
+    <div class="sideNav">
+      <div class="icons">
+        <div style="
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              top: 16px;
+              position: relative;
+            ">
+          <button class="hamburger" id="hamburger" onclick="showMenu()">
+            <svg focusable="false" viewBox="0 0 24 24">
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+          </button>
+          <div class="sideNav-icons" style="margin-top: 30px; display: flex; flex-wrap: wrap">
+            <div>
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_fill_baseline_p900_20dp.png" alt=""
+                width="25px" />
+              </div>
+              <div style="margin-top: 1px; color: #1f1f1f; font-weight: 500; font-size: .75rem;">Mail</div>
+              <div>
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/chat_bubble_baseline_nv700_20dp.png" alt=""
+                width="25px" />
+              </div>
+              <div style="margin-top: 1px; color: #1f1f1f; font-weight: 500; font-size: .75rem;">Chat</div>
+              <div>
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/gmail_groups_baseline_nv700_20dp.png" alt=""
+                width="25px" />
+              </div>
+              <div style="margin-top: 1px; color: #1f1f1f; font-weight: 500; font-size: .75rem;">Spaces</div>
+              <div>
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/meet_baseline_nv700_20dp.png" alt=""
+                width="25px" />
+              </div>
+              <div style="margin-top: 1px; color: #1f1f1f; font-weight: 500; font-size: .75rem;">Meet</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="collap-menu">
+      <div class="menu-items">
+        <div class="compose">
+          <button class="compose-btn">
+            <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/create_black_24dp.png" alt="">
+            Compose
+          </button>
+        </div>
+        <div class="menuTexts" style="background-color:#d3e3fd;border-radius: 100px;">
+          <div>
+            <div class="icon-name" style="display:flex;align-items:center">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/inbox_fill_baseline_p900_20dp.png" alt="">
+              <span style="margin-left: 22px;font-weight:bold;">
+                Inbox
+              </span>
+            </div>
+            <span style="font-size:13px">4</span>
+          </div>
+        </div>
+        <div class="menuTexts">
+          <div>
+            <div class="icon-name" style="display:flex;align-items:center">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="">
+              <span style="margin-left: 22px;">
+                Starred
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="menuTexts">
+          <div>
+            <div class="icon-name" style="display:flex;align-items:center">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="">
+              <span style="margin-left: 22px;">
+                Snoozed
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="menuTexts">
+          <div>
+            <div class="icon-name" style="display:flex;align-items:center">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/send_baseline_nv700_20dp.png" alt="">
+              <span style="margin-left: 22px;">
+                Sent
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="menuTexts">
+          <div>
+            <div class="icon-name" style="display:flex;align-items:center">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/draft_baseline_nv700_20dp.png" alt="">
+              <span style="margin-left: 22px;">
+                Drafts
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="menuTexts">
+          <div>
+            <div class="icon-name" style="display:flex;align-items:center">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/expand_more_baseline_nv700_20dp.png" alt="">
+              <span style="margin-left: 22px;">
+                More
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="topNav">
+      <div class="logo">
+        <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="gmail_logo" />
+      </div>
+      <div class="searchBox">
+        <span class="search-icon"><svg focusable="false" height="24px" viewBox="0 0 24 24" width="24px"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z">
+            </path>
+            <path d="M0,0h24v24H0V0z" fill="none"></path>
+          </svg>
+        </span>
+        <input type="text" id="searchBox" placeholder="Search in mail" />
+        <span class="setting-nr-search" style="border-radius: 0 8px 8px 0; padding-right: 10px"><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z">
+            </path>
+          </svg>
+        </span>
+      </div>
+      <div class="settingAndAll">
+        <div class="status" onclick="showStatusDiag()">
+          <span class="status-icon">&#x2022; </span>
+          <div class="status-Desc">Active</div>
+          <span class="fa fa-play fa-xs arrow"></span>
+        </div>
+        <div class="statusDropDown">
+          <a href="" class="link1">Automatic</a>
+          <a href="" class="link2">Do not Disturb</a>
+          <a href="" class="link3">Set as Away</a>
+        </div>
+        <div class="rghtSupIcons">
+          <button class="support">
+            <svg class="t7" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+              fill="#000000" focusable="false">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z">
+              </path>
+            </svg>
+          </button>
+          <button class="support">
+            <svg class="Xy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z">
+              </path>
+              <circle cx="12" cy="12" r="3.5"></circle>
+            </svg>
+          </button>
+          <button class="support dots-svg">
+            <svg class="gb_0e" focusable="false" viewBox="0 0 24 24">
+              <path
+                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div class="profile">
+          <div class="orgLogo">
+            <img src="https://www.google.com/u/0/ac/images/logo.gif?uid=101150744786580796672&service=google_gsuite"
+              alt="Krish_technolabs" />
+          </div>
+          <div class="dbImg">
+            <img class="gb_h"
+              src="https://lh3.googleusercontent.com/ogw/AAEL6sgaDvQvqhl9hcxwr9bWMgPtQjiKRBidRuSPQF-j=s32-c-mo"
+              alt="profile_photo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentDiv">
+      <div class="topWhite">
+        <div class="icon-collection">
+          <div style="margin-left: 0; white-space:nowrap">
+            <!-- <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/indeterminate_check_box_baseline_nv700_20dp.png"
+              alt="" /> -->
+              <input type="checkbox" name="allCB" id="allCB" style="width: 18px;aspect-ratio: 1/1;" onchange="allCBcheck()">
+            <img style="margin-left: -9px"
+              src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/arrow_drop_down_baseline_nv700_20dp.png" alt="" />
+          </div>
+          <div>
+            <img src="	https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+          </div>
+          <div>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/report_baseline_nv700_20dp.png" alt="" />
+          </div>
+          <div>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+          </div>
+          <div class="vertical-line"></div>
+          <div>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+          </div>
+          <div>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+          <div>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/add_task_baseline_nv700_20dp.png" alt="" />
+          </div>
+          <div class="vertical-line"></div>
+          <div>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/drive_file_move_outline_baseline_nv700_20dp.png"
+              alt="" />
+          </div>
+          <div>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/label_baseline_nv700_20dp.png" alt="" />
+          </div>
+          <div>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/more_vert_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="get_start_grp">
+          <div class="get_start">
+            <span>Get started with Gmail</span>
+            <span style="font-size: 20px;font-weight:bold;position:relative;" class="whiteBoxCross" onclick="closeGetStart()">&times;</span>
+          </div>
+          <div class="get_start_icons">
+            <div class="customize_inbox">
+              <div style="
+                    background-color: #d3e3fd;
+                    padding: 10px;
+                    border-radius: 100%;
+                    width: 28px;
+                  ">
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/settings_baseline_p900_24dp.png" alt="" />
+              </div>
+              <span style="
+                    width: 150px;
+                    margin-left: 20px;
+                    color:#202124;
+                    font-size: 0.875rem;
+                  ">
+                Customize your Inbox
+              </span>
+            </div>
+            <div class="set_a_sign" style="display: flex; align-items: center">
+              <div style="
+                    background-color: #1e8e3e;
+                    padding: 10px;
+                    border-radius: 100%;
+                    width: 28px;
+                  ">
+                <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/check_white_24dp.png" alt="" />
+              </div>
+              <span style="
+                    width: 150px;
+                    margin-left: 20px;
+                    color:#202124;
+                    font-size: 0.875rem;
+                  ">
+                Customize your Inbox
+              </span>
+            </div>
+            <div class="set_a_sign" style="display: flex; align-items: center">
+              <div style="
+                    background-color: #f9dedc;
+                    padding: 10px;
+                    border-radius: 100%;
+                    width: 28px;
+                  ">
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/notifications_baseline_e900_24dp.png"
+                  alt="" />
+              </div>
+              <span style="
+                    width: 150px;
+                    margin-left: 20px;
+                    color:#202124;
+                    font-size: 0.875rem;
+                  ">
+                Customize your Inbox
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mails">
+        <div class="mail mail1" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail1" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem; float:right;">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail2" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail2" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail3" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail3" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail4" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail4" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail5" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail5" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail6" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail6" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail7" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail7" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail8" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail8" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail9" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail9" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail10" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail10" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail11" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail11" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail12" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail12" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail13" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail13" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail14" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail14" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+        <div class="mail mail15" onmouseenter="showInMailIcon(event)" onmouseleave="showInMailDate(event)">
+          <div class="mail-right-icons" style="display: flex">
+            <div class="dots">
+              <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/drag_indicator_black_20dp.png"
+                alt="" />
+            </div>
+            <div class="cb"><input type="checkbox" class="mail-check" name="mail-check" id="mail15" onchange="mailHighlight(event)"/></div>
+            <div class="star">
+              <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" />
+            </div>
+            <div class="sender" style="color: #202124">Midhun Nair</div>
+          </div>
+          <div class="sub">
+            <span style="color: #202124; font-size: 0.875rem">Introducing New HRMS Portal - </span><span
+              class="mailDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam ad asperiores
+              fugit et! Illo atque sunt vel est aspernatur consectetur. Esse ipsa, qui nostrum temporibus nobis dolore
+              dolores eius.</span>
+          </div>
+          <div class="date" style="color: #5f6368; font-size: 0.75rem">
+            Feb 16
+          </div>
+          <div class="inMailIcons" style="display:none">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/archive_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/delete_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_baseline_nv700_20dp.png" alt="" />
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
+
+</html>
