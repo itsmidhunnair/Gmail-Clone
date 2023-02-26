@@ -109,12 +109,12 @@ body{
 
 .statusDropDown{
     display: none;
-    position: fixed;
+    position: absolute; 
     background-color: #fff;
     height: 155px;
     width: 192px;
     top: 54px;
-    left: 1052px;
+    left: 0;
     -webkit-box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.42);
     -moz-box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.42);
     box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.42);

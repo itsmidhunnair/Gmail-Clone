@@ -32,7 +32,6 @@ function showStatusDiag() {
     }
 }
 
-
 function closeGetStart() {
     let tempSpan = document.querySelector(".whiteBoxCross");
     let getStartGrp = document.querySelector(".get_start_grp");
@@ -135,4 +134,33 @@ function showInMailDate(e){
     let tempIconClass = document.querySelector("."+tempClass).childNodes[5];
     console.log(tempIconClass)
     tempIconClass.style.display="block";
+}
+
+function searchMail(){
+    let searchTerm = document.getElementById("searchBox").value.toUpperCase();
+    let senderName = document.querySelectorAll(".sender")
+    if (searchTerm) {
+        let allMail = document.querySelectorAll(".mail");
+        // console.log(allMail[1]);
+        allMail.forEach(val => val.style.display="none")
+        let searchSub = document.querySelectorAll(".mainSubject");
+
+        
+        for (let i = 0; i < searchSub.length; i++){
+            // console.log(searchSub[i].innerHTML.toUpperCase().indexOf(searchTerm));
+            if(searchSub[i].innerHTML.toUpperCase().indexOf(searchTerm)>-1 || senderName[i].innerHTML.toUpperCase().indexOf(searchTerm)>-1)
+            {
+                // alert("abcd")    
+                // console.log(searchSub[i].parentElement.closest(".mail"));
+                searchSub[i].parentElement.closest(".mail").style.display="";    
+            }
+        }
+        
+    }
+    else{
+        let allMail = document.querySelectorAll(".mail");
+        // console.log(allMail[1]);
+        allMail.forEach(val => val.style.display="")
+    }
+
 }
